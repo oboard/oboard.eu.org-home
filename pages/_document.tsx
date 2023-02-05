@@ -14,50 +14,30 @@ export default function Document() {
       </Head>
       <body>
         <main>
-              <div className="flex flex-col h-screen overflow-y-hidden">
-                <div className="w-full navbar sticky z-10 bg-base-100 shadow shadow-gray-200 dark:shadow-gray-900">
-                  <div className="flex-none lg:hidden">
-                    <label
-                      htmlFor="my-drawer-3"
-                      className="btn btn-square btn-ghost"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        className="inline-block w-6 h-6 stroke-current"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M4 6h16M4 12h16M4 18h16"
-                        ></path>
-                      </svg>
-                    </label>
-                  </div>
-                  <div className="flex-1">
-                    <a className="btn btn-ghost normal-case text-xl gap-2">
-                      <div className="avatar">
-                        <div className="w-10 mask mask-squircle">
-                          <img
-                            src="https://upload.jianshu.io/users/upload_avatars/8761709/3101d25e-1917-47dd-bdee-58bbda3352ac.png?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/300/format/webp"
-                            alt="head"
-                          />
-                        </div>
-                      </div>
-                      <span>一块小板子</span>
-                    </a>
-                  </div>
-                </div>
-                <div className="w-full flex-1 overflow-y-scroll">
-                  <div className="flex-1 mx-4 pb-24 py-16">
-                    <div className="flex justify-center">
-                      <Main />
+          <div className="flex flex-col h-screen overflow-y-hidden">
+            <div className="w-full navbar sticky z-10 bg-base-100 shadow shadow-gray-200 dark:shadow-gray-900">
+              <div className="flex-1">
+                <a className="btn btn-ghost normal-case text-xl gap-2">
+                  <div className="avatar">
+                    <div className="w-10 mask mask-squircle">
+                      <img
+                        src="https://upload.jianshu.io/users/upload_avatars/8761709/3101d25e-1917-47dd-bdee-58bbda3352ac.png?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/300/format/webp"
+                        alt="head"
+                      />
                     </div>
                   </div>
+                  <span>一块小板子</span>
+                </a>
+              </div>
+            </div>
+            <div className="w-full flex-1 overflow-y-scroll">
+              <div className="flex-1 mx-4 pb-24 py-16">
+                <div className="flex justify-center">
+                  <Main />
                 </div>
               </div>
+            </div>
+          </div>
         </main>
 
         <NextScript />
