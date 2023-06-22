@@ -1,0 +1,5 @@
+﻿{
+  "Description": "Domain ownership verification file for Microsoft 365 - place in the website root",
+  "Domain": "oboard.eu.org",
+  "Id": "db1ff145-a6a3-4bf0-9998-ef5009b5aee2"
+}
