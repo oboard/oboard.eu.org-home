@@ -16,14 +16,15 @@ type Data = {
 
 export default function handler(
   req: NextApiRequest,
-  res: NextApiResponse<Data>
+  res: NextApiResponse<String>
 ) {
   // 如果请求参数中包含 uuid，则返回对应的皮肤信息
 switch (req.query.uuid) {
   case "timing_free":
+    // 返回字符串形式的皮肤信息，而不是json格式
   res
     .status(200)
-    .json({
+    .send(JSON.stringify( {
       uuid: "timing_free",
       type: 0,
       userId: 3,
@@ -35,7 +36,7 @@ switch (req.query.uuid) {
       tag: null,
       updateTime: null,
       createTime: null,
-    });
+    }));
   }
   
 }
